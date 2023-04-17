@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: whitesmoke;
+            height: 100px;
+
+            display: flex;
+        }
+
+        .container>div{
+            /* 임시작성 */
+            /* border: 1px solid black; */
+
+        }
+
+        .box1{
+            /* item일 때 */
+            flex-basis: 15%;
+
+            /* container일 때 */
+            dispaly: flex;
+            justify-content: center;
+            aligh-items: center;
+        }
+        .box2{
+            /* item일 때 */
+            flex-basis: 70%;
+
+            /* container일 때 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box2>a{
+            font-size: 25px;
+            color: black;
+            font-weight: 600;
+            margin: 10px;
+            padding: 15px;
+        }
+        .box3{
+            flex-basis: 15%;
+
+             /* container일 때 */
+            display: flex;
+            justify-content: right;
+            align-items: center;
+        }
+
+        .box2>a{
+            font-size: 25px;
+            color: black;
+            font-weight: 400;
+            margin: 10px;
+            
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        .box2>a:hover, box3>a:hover{
+            background-color: black;
+            color: white;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+            <h1>피자가게</h1>
+        </div>
+        <div class="box2">
+            <a href="#">메뉴</a>
+            <a href="#">베스트</a>
+            <a href="#">뉴스</a>
+        </div>
+        <div class="box3">
+            <a href="#">로그인</a>
+            <a href="#">회원가입</a>
+        </div>
+    </div>
+</body>
+</html>
